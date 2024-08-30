@@ -10,6 +10,7 @@ A project that wraps the k8sgpt tool using FastAPI
 ## How to use
 1. set backend
 POST localhost:8000/auth/add 
+```
 {
     "kind": "bedrock",
     "ak": "ak",
@@ -17,11 +18,13 @@ POST localhost:8000/auth/add
     "region": "region",
     "model": "anthropic.claude-3-5-sonnet-20240620-v1:0"
 }
-
-2.analyze
+```
+2. analyze
 POST localhost:8000/analyze
+```
 {
     "namespace": "namespace",
     "backend": "amazonbedrock",
     "model": "anthropic.claude-3-5-sonnet-20240620-v1:0"
 }
+```
